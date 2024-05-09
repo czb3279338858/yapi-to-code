@@ -37,11 +37,11 @@ yapiToCode({ config })
 
 # 其他
 ## 项目token
-![alt text](readme/project-token.png)
+![alt text](https://github.com/czb3279338858/yapi-to-code/blob/main/readme/project-token.png)
 
 ## 菜单id
-![alt text](readme/menu-id.png)
+![alt text](https://github.com/czb3279338858/yapi-to-code/blob/main/readme/menu-id.png)
 
 
 ## 接口id
-![alt text](readme/request-id.png)
+![alt text](https://github.com/czb3279338858/yapi-to-code/blob/main/readme/request-id.png)
