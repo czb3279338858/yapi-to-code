@@ -101,7 +101,7 @@ const config = {
             // 89455, // 响应 data 为 null
             // 94460, // post 请求体 formData，响应为空
             // 92920, // get请求，响应 data 直接平铺
-            // 79480 // get 请求，参数在 url上
+            79480 // get 请求，参数在 url上
         ]
     }],
 }
