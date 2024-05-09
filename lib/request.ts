@@ -1,3 +1,5 @@
-import axios from "axios";
+import { Axios } from "axios"
 
-export const selfAxios = axios.create()
+const axios = require("axios")
+
+export const selfAxios: Axios = axios.create()

@@ -1,7 +1,6 @@
-import { join } from 'path'
-import { Config } from './lib/main'
+const { join } = require('path')
 /**
- * @type {Config}
+ * @type {import('./dist').Config}
  */
 const config = {
     /**
@@ -106,4 +105,4 @@ const config = {
         ]
     }],
 }
-export default config
+exports.default = config

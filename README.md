@@ -14,7 +14,7 @@ npm install -D yapi-to-code
 
 ...
 script:{
-    'yapi-to-code':'yapi-to-code -p src/yapi-to-code.config.js -w append -i 94306,89455'
+    'yapi-to-code':'yapi-to-code -p src/yapi-to-code.config.js -w append -i 94306 89455'
 }
 ...
 
