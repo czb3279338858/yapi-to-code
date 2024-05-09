@@ -5,7 +5,7 @@ npm install -D yapi-to-code
 
 # 使用
 ## 配置文件
-- [中文示例](src/yapi-to-code.config.js)
+- [中文示例](https://github.com/czb3279338858/yapi-to-code/blob/main/src/yapi-to-code.config.js)
 
 
 ## 命令行模式
