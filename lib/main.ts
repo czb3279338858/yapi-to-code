@@ -78,7 +78,7 @@ interface getConfigArg {
  */
 export async function getConfig(arg?: getConfigArg) {
   const { ids, configPath, writeMode } = arg || {}
-  const path = join(process.cwd(), configPath?.[0] || './yapi-to-code.config.js')
+  const path = join(process.cwd(), configPath?.[0] || './yapi-to-code.config.cjs')
   try {
     const config: { default: Config } = require(path)
     if (ids?.length) {

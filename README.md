@@ -14,7 +14,7 @@ npm install -D yapi-to-code
 
 ...
 script:{
-    'yapi-to-code':'yapi-to-code -p src/yapi-to-code.config.js -w append -i 94306 89455'
+    'yapi-to-code':'yapi-to-code -p src/yapi-to-code.config.cjs -w append -i 94306 89455'
 }
 ...
 
@@ -24,7 +24,7 @@ script:{
 ```
 import { getConfig, yapiToCode } from 'yapi-to-code'
 /**
- * 所有参数都是可选的 configPath 默认为 ./yapi-to-code.config.js
+ * 所有参数都是可选的 configPath 默认为 ./yapi-to-code.config.cjs
  */
 const config = getConfig({
   ids: [94306],
