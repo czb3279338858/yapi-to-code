@@ -1,3 +1,4 @@
+/* eslint-env node */
 const { join } = require('path')
 /**
  * @type {import('./dist').Config}
