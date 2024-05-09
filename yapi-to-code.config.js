@@ -34,7 +34,7 @@ const config = {
         })
         url = url.replace(/\{(\w+)\}/g, (substring, ...args) => {
             const key = args[0]
-            return `$\{${paramsName}.${key}\}`
+            return `$\{${paramsName}.${key}}`
         })
 
         const method = request.method.toLocaleLowerCase()
