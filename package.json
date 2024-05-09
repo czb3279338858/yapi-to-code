@@ -1,6 +1,6 @@
 {
   "name": "yapi-to-code",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "files": [
     "dist"
   ],
@@ -21,7 +21,7 @@
     "build": "npm run build-lib && npm run build-bin",
     "release": "npm run build && npm version patch && npm publish",
     "dev": "ts-node lib/bind/yapi-to-code.ts --ids 94299",
-    "build-dev":"npm run build && node dist/bin/yapi-to-code.umd.js --ids 94299"
+    "build-dev": "npm run build && node dist/bin/yapi-to-code.umd.js --ids 94299"
   },
   "devDependencies": {
     "@types/json-schema": "^7.0.15",
