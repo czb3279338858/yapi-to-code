@@ -5,7 +5,8 @@ export default defineConfig({
     outDir: './dist/bin',
     lib: {
       entry: './lib/bind/yapi-to-code.ts',
-      formats: ['cjs'],
+      formats: ['umd'],
+      name: 'YapiToCode',
       fileName: 'yapi-to-code',
     }
   }

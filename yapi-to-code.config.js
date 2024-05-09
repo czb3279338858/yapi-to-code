@@ -1,5 +1,5 @@
 import { join } from 'path'
-import { Config } from '../lib/main'
+import { Config } from './lib/main'
 /**
  * @type {Config}
  */

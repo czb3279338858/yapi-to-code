@@ -5,14 +5,14 @@
     "dist"
   ],
   "bin": {
-    "yapi-to-code": "dist/bin/yapi-to-code.js"
+    "yapi-to-code": "dist/bin/yapi-to-code.umd.js"
   },
   "main": "./dist/yapi-to-code.umd.cjs",
-  "module": "./dist/yapi-to-code.js",
+  "module": "./dist/yapi-to-code.mjs",
   "types": "./dist/index.d.ts",
   "exports": {
     "types": "./dist/index.d.ts",
-    "import": "./dist/yapi-to-code.js",
+    "import": "./dist/yapi-to-code.mjs",
     "require": "./dist/yapi-to-code.umd.cjs"
   },
   "scripts": {
@@ -20,7 +20,8 @@
     "build-bin": "vite build --config bin.vite.config.ts",
     "build": "npm run build-lib && npm run build-bin",
     "release": "npm run build && npm version patch && npm publish",
-    "dev": "ts-node lib/bind/yapi-to-code.ts --ids 94299 -p src/yapi-to-code.config.js -w append"
+    "dev": "ts-node lib/bind/yapi-to-code.ts --ids 94299",
+    "build-dev":"npm run build && node dist/bin/yapi-to-code.umd.js --ids 94299"
   },
   "devDependencies": {
     "@types/json-schema": "^7.0.15",

@@ -2,7 +2,7 @@ import { GetProjectResponse, getProject } from "./request/api/project/get/get"
 
 import { GetInterfaceResponse, getInterface } from "./request/api/interface/get/get"
 import { GetListMenuResponse, getListMenu } from "./request/api/interface/list_menu/get"
-import { JSONSchema4 } from 'json-schema'
+import type { JSONSchema4 } from 'json-schema'
 const { compile } = require('json-schema-to-typescript')
 import { selfAxios } from "./request"
 
@@ -91,7 +91,7 @@ export async function getConfig(arg?: getConfigArg) {
     }
     return config.default
   } catch (error) {
-    throw new Error(`读取配置文件失败:${configPath}`);
+    throw new Error(`读取配置文件失败:${path}。${error}`);
   }
 }
 /**
