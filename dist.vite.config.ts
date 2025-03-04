@@ -9,6 +9,7 @@ export default defineConfig({
     }),
   ],
   build: {
+    target: 'node12',
     outDir: "./dist",
     lib: {
       entry: './lib/main.ts',
